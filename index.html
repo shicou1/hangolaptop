@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hango Laptop</title>
+
+<style>
+:root{
+--blue-main:#1e4fd8;
+--blue-light:#4da3ff;
+--dark:#05070f;
+--card:#0d1224;
+--white:#ffffff;
+--whatsapp:#25D366;
+}
+
+*{
+box-sizing:border-box;
+font-family: Tahoma, Arial, sans-serif;
+}
+
+body{
+margin:0;
+min-height:100vh;
+background: linear-gradient(135deg, #05070f, #0b1a40);
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--white);
+}
+
+.container{
+width:100%;
+max-width:420px;
+padding:25px;
+text-align:center;
+animation:fadeUp 0.8s ease;
+}
+
+/* 🖼️ Logo */
+.logo{
+width:130px;
+height:130px;
+margin:0 auto 15px;
+border-radius:18px;
+overflow:hidden;
+border:2px solid var(--blue-light);
+box-shadow:0 0 25px rgba(77,163,255,0.4);
+animation:float 3s ease-in-out infinite;
+}
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h1{
+margin:12px 0 5px;
+font-size:24px;
+}
+
+.subtitle{
+font-size:13px;
+opacity:0.8;
+margin-bottom:25px;
+}
+
+/* 🔗 Links */
+.link{
+display:flex;
+align-items:center;
+gap:12px;
+background:var(--card);
+border:2px solid var(--blue-main);
+border-radius:14px;
+padding:15px;
+margin-bottom:15px;
+text-decoration:none;
+color:var(--white);
+font-size:16px;
+transition:0.3s;
+}
+
+.link svg{
+width:22px;
+height:22px;
+fill:currentColor;
+}
+
+.link:hover{
+background:linear-gradient(135deg, var(--blue-main), var(--blue-light));
+color:#000;
+transform:scale(1.04);
+}
+
+/* 🟢 WhatsApp Button */
+.whatsapp{
+background:var(--whatsapp);
+color:#000;
+border:none;
+justify-content:center;
+font-weight:bold;
+}
+
+.whatsapp:hover{
+background:#1ebe5b;
+}
+
+/* Footer */
+.footer{
+margin-top:20px;
+font-size:12px;
+opacity:0.6;
+}
+
+/* ✨ Animations */
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-6px);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<img src="logo.png" alt="Hango Laptop">
+</div>
+
+<h1>Hango Laptop</h1>
+<div class="subtitle">Service & Repair</div>
+
+<!-- Facebook -->
+<a class="link" href="https://www.facebook.com/share/179cLXFh4M/?mibextid=wwXIfr" target="_blank">
+<svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/></svg>
+Facebook
+</a>
+
+<!-- Instagram -->
+<a class="link" href="https://www.instagram.com/hangolaptop" target="_blank">
+<svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/></svg>
+Instagram
+</a>
+
+<!-- TikTok -->
+<a class="link" href="https://www.tiktok.com/@hangolaptop" target="_blank">
+<svg viewBox="0 0 24 24"><path d="M21 8.3a6.7 6.7 0 0 1-4-1.4v7.2a5.7 5.7 0 1 1-5.7-5.7c.3 0 .7 0 1 .1v3a2.7 2.7 0 1 0 2.7 2.7V2h3a6.7 6.7 0 0 0 3 3.7z"/></svg>
+TikTok
+</a>
+
+<!-- WhatsApp -->
+<a class="link whatsapp" href="https://wa.me/213778106874" target="_blank">
+<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm5.1 14.6c-.2.6-1.2 1.1-1.7 1.1-.4 0-.9.1-3-1-2.6-1.3-4.2-3.7-4.3-3.9-.1-.2-1-1.4-1-2.7 0-1.3.7-1.9.9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .5-.1.7.5.2.6.8 2 .9 2.1.1.1.1.3 0 .5-.1.2-.2.3-.3.5-.1.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2.9 2.2 1.2 2.5 1.3.3.1.5.1.7-.1.2-.2.9-1 .1.6z"/></svg>
+WhatsApp
+</a>
+
+<div class="footer">
+© 2025 Hango Laptop
+</div>
+
+</div>
+
+</body>
+</html>
